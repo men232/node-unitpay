@@ -1,0 +1,16 @@
+{
+  "name": "unitpay",
+  "version": "1.0.0",
+  "description": "Unitpay merchant",
+  "main": "unitpay.js",
+  "keywords": [
+    "unitpay",
+    "merchant"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/men232/node-unitpay.git"
+  },
+  "author": "Andrew Mensky",
+  "license": "MIT"
+}
