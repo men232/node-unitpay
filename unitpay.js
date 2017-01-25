@@ -29,6 +29,9 @@ class UnitPay {
 		removeArrayValue(keys, 'signature');
 
 		let data = [];
+
+		if (method) data.push(method);
+
 		keys.forEach(v => data.push(params[v]));
 		data.push(this.secretKey);
 
