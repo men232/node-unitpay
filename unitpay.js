@@ -5,10 +5,11 @@ const qs     = require('qs');
 class UnitPay {
 	constructor(opts = {}) {
 		this.supportedCurrencies = ['EUR','UAH', 'BYR', 'USD','RUB'];
-		this.supportedMethods = ['initPayment', 'getPayment'];
+		this.supportedMethods = ['initPayment', 'getPayment', 'massPayment'];
 		this.requiredMethodsParams = {
 			initPayment: ['desc', 'account', 'sum'],
 			getPayment: ['paymentId'],
+			massPayment: ['sum', 'purse', 'login', 'transactionId', 'paymentType'],
 		};
 
 		this.apiUrl    = 'https://unitpay.ru/api';
