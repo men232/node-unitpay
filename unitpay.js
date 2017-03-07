@@ -159,7 +159,7 @@ class UnitPay {
 // Method to hash data
 function hash(data, hash = 'sha256') {
 	return crypto.createHash(hash)
-		.update(data)
+		.update(data, 'utf8')
 		.digest('hex');
 }
 
